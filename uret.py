@@ -54,6 +54,7 @@ LISTE = {
 def doldur(g):
     sablon = (KOK / "sablonlar" / f'{g["sablon"]}.html').read_text(encoding="utf-8")
     veri = {**VARSAYILAN, **g}
+    if not veri["buton"]: sablon = sablon.replace('<div class="btn">{{buton}} &nbsp;→</div>', "")
     alanlar = {k: metin(v) for k, v in veri.items() if isinstance(v, str)}
     alanlar.update({k: f(veri[k]) for k, f in LISTE.items() if k in veri})
     alanlar["dalgalar"] = dalgalar()
