@@ -1,0 +1,29 @@
+[
+  {
+    "id": "ornek_1_mavi",
+    "sablon": "mavi",
+    "etiket": "#rysone.ai",
+    "filigran": "7/24",
+    "ince_baslik": "Gece 03:00'te\ngelen mesaj da",
+    "kalin_baslik": "cevapsız\nkalmaz.",
+    "bilgi": "Rysone 7/24 yanıtlar, randevuyu kendisi oluşturur.",
+    "buton": "HEMEN DENE",
+    "site": "rysone.ai"
+  },
+  {
+    "id": "ornek_2_sohbet",
+    "sablon": "sohbet",
+    "rozet": "20+ SEKTÖRDE KULLANILIYOR",
+    "baslik": "Randevu almak",
+    "vurgu": "30 saniye sürsün.",
+    "asistan_adi": "Rysone Asistan",
+    "mesajlar": [
+      {"kim": "musteri", "metin": "Merhaba, yarın öğleden sonra cilt bakımı için yeriniz var mı?", "saat": "14:02"},
+      {"kim": "asistan", "metin": "Merhaba! Yarın 15:00 dolu, **15:30** ve **17:00** müsait. Hangisini ayırayım?", "saat": "14:02"},
+      {"kim": "musteri", "metin": "15:30 olsun.", "saat": "14:03"},
+      {"kim": "asistan", "metin": "Harika, yarın 15:30 randevunuz oluşturuldu. Bir gün önce hatırlatma göndereceğim.", "saat": "14:03"}
+    ],
+    "alt_metin": "Müşterin yazar, Rysone **uygun saati bulur, randevuyu kaydeder** ve hatırlatır.",
+    "buton": "HEMEN DENE"
+  }
+]

@@ -1,0 +1,24 @@
+<!doctype html><html lang="tr"><head><meta charset="utf-8"><link rel="stylesheet" href="../assets/base.css"><style>
+  body { align-items: center; text-align: center; }
+  .bigwrap { position: relative; }
+  .rings { position: absolute; left: 50%; top: 55%; z-index: -1; }
+  .rings i { position: absolute; left: 50%; top: 50%; border-radius: 50%; border: 2px solid var(--line); transform: translate(-50%, -50%); }
+  .rings i:nth-child(1) { width: 640px; height: 640px; }
+  .rings i:nth-child(2) { width: 860px; height: 860px; opacity: .6; }
+  .rings i:nth-child(3) { width: 1080px; height: 1080px; opacity: .35; }
+  .big { margin-top: 70px; font-weight: 800; font-size: 300px; line-height: 1; letter-spacing: -10px; white-space: nowrap; }
+  .tema-acik .big { background: linear-gradient(90deg, #2459E8, #7C5CFF); -webkit-background-clip: text; background-clip: text; color: transparent; }
+  .unit { margin-top: 14px; font-size: 40px; font-weight: 500; letter-spacing: 8px; text-transform: uppercase; color: var(--muted); }
+  h2 { margin-top: 90px; font-size: 64px; font-weight: 700; line-height: 1.12; letter-spacing: -1px; }
+  p.t { margin-top: 30px; font-size: 32px; line-height: 1.45; color: var(--muted); }
+  .btn { margin-top: 50px; }
+</style></head>
+<body class="tema-{{tema}}"><div class="glow"></div>
+  <div class="tag ust">{{etiket}}</div>
+  <div class="bigwrap"><div class="rings deco"><i></i><i></i><i></i></div><div class="big">{{sayi}}</div></div>
+  <div class="unit">{{birim}}</div>
+  <h2>{{baslik}}</h2>
+  <p class="t">{{metin}}</p>
+  <div class="btn">{{buton}} &nbsp;→</div>
+  <div class="foot center"><img src="../assets/{{logo}}.png"></div>
+</body></html>

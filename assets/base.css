@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Anton&display=swap');
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html, body { width: 1080px; height: 1920px; overflow: hidden; }
+/* hikâye güvenli alanı: üst 260, alt 300 (profil çubuğu ve yanıt kutusu) */
+body { font-family: 'Poppins', sans-serif; position: relative; background: var(--bg); color: var(--fg);
+       display: flex; flex-direction: column; padding: 260px 96px 300px; }
+
+.tema-acik { --bg: #F6F7FB; --fg: #12162B; --muted: #4A5070; --accent: #2459E8; --accent2: #7C5CFF;
+             --card: #FFFFFF; --card-fg: #12162B; --line: #E3E7F2; --soft: #EEF1F8; --onaccent: #fff; }
+.tema-mavi { --bg: #2459E8; --fg: #FFFFFF; --muted: rgba(255,255,255,.82); --accent: #FFFFFF; --accent2: #C9D6FF;
+             --card: #FFFFFF; --card-fg: #12162B; --line: rgba(255,255,255,.35); --soft: rgba(255,255,255,.14); --onaccent: #2459E8; }
+.tema-gece { --bg: #0B1030; --fg: #FFFFFF; --muted: rgba(220,226,255,.78); --accent: #5B82FF; --accent2: #A08CFF;
+             --card: #161C45; --card-fg: #FFFFFF; --line: rgba(255,255,255,.14); --soft: rgba(255,255,255,.07); --onaccent: #fff; }
+.tema-mor  { --bg: #3B4BEA; --fg: #FFFFFF; --muted: rgba(255,255,255,.85); --accent: #FFFFFF; --accent2: #FFD7F5;
+             --card: #FFFFFF; --card-fg: #12162B; --line: rgba(255,255,255,.35); --soft: rgba(255,255,255,.15); --onaccent: #4A3BEA; }
+.tema-mor  { background: linear-gradient(160deg, #2459E8 0%, #5B4BF0 55%, #8B5CF6 100%); }
+
+.glow { position: absolute; inset: 0; z-index: -1; pointer-events: none; }
+.tema-acik .glow { background: radial-gradient(700px 600px at 100% 0%, rgba(99,102,241,.14), transparent 60%),
+                                radial-gradient(700px 700px at 0% 75%, rgba(36,89,232,.10), transparent 60%); }
+.tema-mavi .glow { background: radial-gradient(900px 700px at 90% 5%, rgba(255,255,255,.16), transparent 60%),
+                                radial-gradient(800px 800px at 0% 100%, rgba(10,30,140,.45), transparent 60%); }
+.tema-gece .glow { background: radial-gradient(800px 700px at 100% 0%, rgba(91,130,255,.30), transparent 60%),
+                                radial-gradient(700px 700px at 0% 100%, rgba(160,140,255,.20), transparent 60%); }
+.tema-mor  .glow { background: radial-gradient(800px 700px at 0% 0%, rgba(255,255,255,.18), transparent 60%); }
+
+.grad-text { background: linear-gradient(90deg, var(--accent), var(--accent2)); -webkit-background-clip: text;
+             background-clip: text; color: transparent; }
+.tag { font-size: 30px; font-weight: 500; color: var(--muted); letter-spacing: .5px; }
+.badge { align-self: center; white-space: nowrap; border-radius: 999px; padding: 14px 32px; font-size: 26px;
+         font-weight: 600; letter-spacing: 1px; background: var(--soft); color: var(--fg); border: 2px solid var(--line); }
+.tema-acik .badge { background: #fff; color: var(--accent); border-color: #DCE3FF; }
+.btn { align-self: center; white-space: nowrap; border-radius: 999px; padding: 24px 60px; font-size: 26px; font-weight: 600;
+       letter-spacing: 3px; background: linear-gradient(90deg, #2459E8, #7C5CFF); color: #fff;
+       box-shadow: 0 18px 40px rgba(60,80,230,.30); }
+.tema-mavi .btn, .tema-mor .btn { background: #fff; color: var(--onaccent); box-shadow: 0 18px 40px rgba(8,20,90,.25); }
+body > * { flex-shrink: 0; }
+/* .ust: içerik bloğunu güvenli alanda dikey ortalar (foot da margin-top:auto) */
+.ust { margin-top: auto !important; }
+.foot { margin-top: auto; padding-top: 44px; display: flex; align-items: center; gap: 28px; }
+.foot img { height: 58px; }
+.foot .line { flex: 1; height: 2px; background: var(--line); }
+.foot span { font-size: 30px; font-weight: 500; color: var(--muted); }
+.foot.center { justify-content: center; }

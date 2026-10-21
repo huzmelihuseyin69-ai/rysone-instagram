@@ -1,0 +1,20 @@
+<!doctype html><html lang="tr"><head><meta charset="utf-8"><link rel="stylesheet" href="../assets/base.css"><style>
+  .q { margin-top: 40px; font-family: 'Anton', sans-serif; font-size: 150px; line-height: 1.13; letter-spacing: 1px;
+       color: var(--fg); }
+  .q b { font-weight: 400; color: var(--accent); }
+  .tema-acik .q b { color: #2459E8; }
+  .tema-mavi .q b, .tema-mor .q b { color: #FFE27A; }
+  .bar { margin-top: 56px; width: 120px; height: 8px; border-radius: 4px; background: linear-gradient(90deg, #2459E8, #7C5CFF); }
+  .tema-mavi .bar, .tema-mor .bar { background: #fff; }
+  .a { margin-top: 44px; font-size: 38px; line-height: 1.42; color: var(--muted); }
+  .a b { color: var(--fg); font-weight: 600; }
+  .btn { align-self: flex-start; margin-top: 56px; }
+</style></head>
+<body class="tema-{{tema}}"><div class="glow"></div>
+  <div class="tag ust">{{etiket}}</div>
+  <div class="q" style="font-size:{{soru_boyut}}">{{soru}}</div>
+  <div class="bar"></div>
+  <div class="a">{{cevap}}</div>
+  <div class="btn">{{buton}} &nbsp;→</div>
+  <div class="foot"><img src="../assets/{{logo}}.png"><div class="line"></div><span>{{site}}</span></div>
+</body></html>

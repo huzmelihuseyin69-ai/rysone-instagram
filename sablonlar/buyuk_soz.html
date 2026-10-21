@@ -1,0 +1,28 @@
+<!doctype html><html lang="tr"><head><meta charset="utf-8"><link rel="stylesheet" href="../assets/base.css"><style>
+  svg.waves { position: absolute; left: -120px; bottom: 120px; width: 1300px; height: 900px; opacity: .5; z-index: -1; }
+  .tema-acik svg.waves polyline { stroke: rgba(36,89,232,.10); }
+  .watermark { position: absolute; right: -30px; top: 150px; font-weight: 800; font-size: 370px; line-height: 1; z-index: -1;
+               color: transparent; -webkit-text-stroke: 3px var(--line); letter-spacing: -12px; opacity: .55; white-space: nowrap; }
+  .wrap { margin-top: 300px; }
+  .thin { margin-top: 30px; font-size: 94px; font-weight: 300; line-height: 1.08; letter-spacing: -1px; }
+  .bold { margin-top: 14px; font-size: 102px; font-weight: 700; line-height: 1.04; letter-spacing: -1.5px; }
+  .tema-acik .bold { color: var(--accent); }
+  .pill { display: inline-flex; align-items: center; gap: 18px; margin-top: 60px; background: var(--card); color: var(--card-fg);
+          border-radius: 40px; padding: 22px 36px; font-size: 29px; font-weight: 500; line-height: 1.35;
+          box-shadow: 0 18px 40px rgba(8,20,90,.18); max-width: 100%; }
+  .tema-gece .pill { border: 2px solid var(--line); }
+  .pill i { width: 18px; height: 18px; border-radius: 50%; background: #2459E8; box-shadow: 0 0 0 6px rgba(36,89,232,.18); flex: none; }
+  .wrap .btn { margin-top: 40px; display: inline-block; }
+</style></head>
+<body class="tema-{{tema}}"><div class="glow"></div>
+  <svg class="waves deco" viewBox="0 0 1300 900" fill="none">{{dalgalar}}</svg>
+  <div class="watermark deco">{{filigran}}</div>
+  <div class="wrap">
+    <div class="tag">{{etiket}}</div>
+    <div class="thin">{{ince_baslik}}</div>
+    <div class="bold">{{kalin_baslik}}</div>
+    <div class="pill"><i></i><span>{{bilgi}}</span></div><br>
+    <div class="btn">{{buton}} &nbsp;→</div>
+  </div>
+  <div class="foot"><img src="../assets/{{logo}}.png"><div class="line"></div><span>{{site}}</span></div>
+</body></html>

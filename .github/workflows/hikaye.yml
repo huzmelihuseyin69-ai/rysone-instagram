@@ -1,0 +1,53 @@
+name: Günlük paylaşım
+
+on:
+  schedule:
+    - cron: "0 9 * * *"   # UTC 09:00 = TR 12:00
+  workflow_dispatch:
+    inputs:
+      tur:
+        description: "Ne paylaşılsın?"
+        type: choice
+        options: [ikisi, hikaye, gonderi]
+        default: ikisi
+      zorla:
+        description: "Bugün paylaşıldıysa da paylaş"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+concurrency:
+  group: paylasim
+  cancel-in-progress: false
+
+jobs:
+  paylas:
+    runs-on: ubuntu-latest
+    env:
+      IG_USER_ID: ${{ secrets.IG_USER_ID }}
+      IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+      GORSEL_TABAN_URL: https://raw.githubusercontent.com/${{ github.repository }}/${{ github.ref_name }}/yayin
+      BITINCE: ${{ vars.BITINCE || 'dur' }}
+      ZORLA: ${{ inputs.zorla && '1' || '0' }}
+      TUR: ${{ inputs.tur || 'ikisi' }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install requests
+      - name: Hikâye
+        if: env.TUR != 'gonderi'
+        run: python paylas.py hikaye
+      - name: Gönderi
+        if: ${{ !cancelled() && env.TUR != 'hikaye' }}
+        run: python paylas.py gonderi
+      - name: Durumu kaydet
+        if: ${{ !cancelled() }}
+        run: |
+          git config user.name "paylasim-bot"
+          git config user.email "paylasim-bot@users.noreply.github.com"
+          git add durum.json
+          git diff --cached --quiet || (git commit -m "Instagram paylaşımı $(date -u +%F)" && git push)

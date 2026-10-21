@@ -1,0 +1,29 @@
+<!doctype html><html lang="tr"><head><meta charset="utf-8"><link rel="stylesheet" href="../assets/base.css"><style>
+  h1 { margin-top: 10px; font-size: 84px; line-height: 1.08; letter-spacing: -1.5px; }
+  h1 .t { font-weight: 300; display: block; }
+  h1 .b { font-weight: 700; display: block; }
+  .clock { margin-top: 56px; text-align: center; }
+  .clock .h { font-size: 150px; font-weight: 600; line-height: 1; letter-spacing: -4px; }
+  .clock .d { font-size: 28px; color: var(--muted); margin-top: 8px; }
+  .stack { margin-top: 44px; display: flex; flex-direction: column; gap: 18px; }
+  .n { display: flex; gap: 22px; align-items: flex-start; padding: 24px 28px; border-radius: 34px;
+       background: rgba(255,255,255,.14); border: 2px solid rgba(255,255,255,.18); backdrop-filter: blur(20px); }
+  .tema-acik .n { background: #fff; border-color: #E6EAF5; box-shadow: 0 16px 36px rgba(20,30,80,.08); }
+  .tema-gece .n { background: rgba(255,255,255,.07); border-color: rgba(255,255,255,.12); }
+  .ic { width: 64px; height: 64px; border-radius: 16px; flex: none; display: grid; place-items: center; color: #fff;
+        font-weight: 700; font-size: 30px; background: linear-gradient(135deg, #2459E8, #7C5CFF); }
+  .tema-mavi .ic, .tema-mor .ic { background: #fff; color: #2459E8; }
+  .nb { flex: 1; min-width: 0; }
+  .row { display: flex; justify-content: space-between; font-size: 21px; color: var(--muted); letter-spacing: 1px; }
+  .nb b { display: block; margin-top: 4px; font-size: 27px; font-weight: 600; }
+  .nb p { font-size: 25px; color: var(--muted); line-height: 1.35; margin-top: 2px; }
+  .sub { margin-top: 40px; font-size: 29px; line-height: 1.42; color: var(--muted); }
+  .sub b { color: var(--fg); font-weight: 600; }
+</style></head>
+<body class="tema-{{tema}}"><div class="glow"></div>
+  <h1 class="ust"><span class="t">{{ince_baslik}}</span><span class="b">{{kalin_baslik}}</span></h1>
+  <div class="clock"><div class="h">{{saat}}</div><div class="d">{{tarih}}</div></div>
+  <div class="stack">{{bildirimler}}</div>
+  <div class="sub">{{alt_metin}}</div>
+  <div class="foot"><img src="../assets/{{logo}}.png"><div class="line"></div><span>{{site}}</span></div>
+</body></html>

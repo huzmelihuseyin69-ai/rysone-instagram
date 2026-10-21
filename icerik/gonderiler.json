@@ -1,0 +1,238 @@
+[
+  {"id": "01_gece_0300", "sablon": "buyuk_soz", "tema": "mavi", "filigran": "7/24",
+   "ince_baslik": "Gece 03:00'te\ngelen mesaj da", "kalin_baslik": "cevapsız\nkalmaz.",
+   "bilgi": "Rysone 7/24 yanıtlar, randevuyu kendisi oluşturur."},
+
+  {"id": "02_dis_klinigi", "sablon": "sohbet", "tema": "acik", "rozet": "DİŞ KLİNİKLERİ İÇİN",
+   "baslik": "Hasta yazdı,", "vurgu": "randevu hazır.", "asistan_adi": "Klinik Asistanı",
+   "mesajlar": [
+     {"kim": "musteri", "metin": "Dişim çok ağrıyor, yarın bakabilir misiniz?", "saat": "23:41"},
+     {"kim": "asistan", "metin": "Geçmiş olsun! Yarın **10:00** ve **14:30** müsait. Hangisi size uygun?", "saat": "23:41"},
+     {"kim": "musteri", "metin": "10:00 olsun lütfen.", "saat": "23:42"},
+     {"kim": "asistan", "metin": "Yarın 10:00 muayene randevunuz oluşturuldu. Sabah size hatırlatma göndereceğim.", "saat": "23:42"}],
+   "alt_metin": "Gece yarısı gelen hasta mesajı bile **sabahı beklemeden** randevuya dönüşür."},
+
+  {"id": "03_mesai_bitti", "sablon": "soru", "tema": "gece", "soru_boyut": "142px",
+   "soru": "MESAİ BİTTİ.\nMÜŞTERİ YAZDI.\n**ŞİMDİ NE OLACAK?**",
+   "cevap": "Rysone ile cevap sabahı beklemez. Müşterin **yazdığı anda yanıtını alır**, randevusu oluşur."},
+
+  {"id": "04_sen_uyurken", "sablon": "bildirim", "tema": "mor",
+   "ince_baslik": "Sen uyurken", "kalin_baslik": "randevuların doluyor.", "saat": "03:22", "tarih": "Salı, gece",
+   "bildirimler": [
+     {"baslik": "Yeni randevu", "metin": "Cilt bakımı · Yarın 15:30", "zaman": "02:14"},
+     {"baslik": "Yeni randevu", "metin": "Lazer epilasyon · Cuma 11:00", "zaman": "02:41"},
+     {"baslik": "Soru yanıtlandı", "metin": "Fiyat bilgisi gönderildi", "zaman": "03:05"}],
+   "alt_metin": "Sabah uyandığında işin **çoktan başlamış** olur."},
+
+  {"id": "05_rysonesuz_rysone_ile", "sablon": "karsilastirma", "tema": "acik", "etiket": "Fark nerede?",
+   "baslik": "Aynı işletme,\niki farklı gün.",
+   "sol_baslik": "Rysone'suz", "sol_maddeler": ["Mesajlar saatlerce bekler", "Mesai dışı = kaçan müşteri", "Aynı sorulara tekrar tekrar cevap", "Randevular defterde karışır"],
+   "sag_baslik": "Rysone ile", "sag_maddeler": ["Saniyeler içinde yanıt", "7/24 açık", "Sık sorular otomatik", "Randevular tek panelde"]},
+
+  {"id": "06_hic_kapanmaz", "sablon": "sayi", "tema": "mavi", "etiket": "Rysone'un çalışma saatleri",
+   "sayi": "7/24", "birim": "açık", "baslik": "Hiç kapanmaz.",
+   "metin": "Gece, hafta sonu, bayram. Müşterin ne zaman yazarsa yazsın cevap hazır."},
+
+  {"id": "07_nasil_calisir", "sablon": "adimlar", "tema": "acik", "etiket": "Merak edenler için",
+   "baslik": "Rysone nasıl\nçalışır?",
+   "adimlar": [
+     {"baslik": "Müşteri yazar", "metin": "Instagram'dan, WhatsApp'tan ya da web sitenden."},
+     {"baslik": "Rysone anlar", "metin": "Sorusunu yanıtlar, ne istediğini netleştirir."},
+     {"baslik": "Randevu oluşur", "metin": "Uygun saati bulur, kaydı açar, hatırlatır."},
+     {"baslik": "Sen sadece bakarsın", "metin": "Her şey panelinde hazır bekler."}]},
+
+  {"id": "08_ayni_soru", "sablon": "sektorler", "tema": "gece", "etiket": "20+ sektör",
+   "baslik": "Hepsinde aynı soru:", "vurgu": "“Müsait misiniz?”",
+   "etiketler": ["Diş kliniği", "Güzellik merkezi", "Kuaför", "Berber", "Veteriner", "Diyetisyen", "Fizyoterapi", "Psikolog", "Restoran", "Halı yıkama", "Oto servis", "Emlak", "Spor salonu", "Pilates", "Dövme stüdyosu", "Fotoğrafçı"],
+   "alt_metin": "Cevabı Rysone verir, **randevuyu da o oluşturur.**"},
+
+  {"id": "09_ipucu_cevap_hizi", "sablon": "ipucu", "tema": "acik", "etiket": "İşletmeler için ipucu", "no": "01",
+   "baslik": "Cevap hızı satışı belirler.",
+   "metin": "Mesaj atan müşteri çoğu zaman birden fazla işletmeye yazar. **İlk cevap veren** bir adım öne geçer.",
+   "not": "Rysone her mesaja **saniyeler içinde** cevap verir."},
+
+  {"id": "10_kuafor", "sablon": "sohbet", "tema": "gece", "rozet": "KUAFÖR VE BERBERLER İÇİN",
+   "baslik": "Sen saç kes,", "vurgu": "telefona Rysone baksın.", "asistan_adi": "Salon Asistanı",
+   "mesajlar": [
+     {"kim": "musteri", "metin": "Cumartesi kesim + fön için yer var mı?", "saat": "18:20"},
+     {"kim": "asistan", "metin": "Cumartesi **11:00** ve **16:00** boş. Hangi saati ayırayım?", "saat": "18:20"},
+     {"kim": "musteri", "metin": "16:00 iyi olur.", "saat": "18:21"},
+     {"kim": "asistan", "metin": "Cumartesi 16:00 kesim + fön randevunuz hazır. Görüşmek üzere!", "saat": "18:21"}],
+   "alt_metin": "Makas elindeyken gelen mesajlar **artık beklemiyor.**"},
+
+  {"id": "11_isine_odaklan", "sablon": "buyuk_soz", "tema": "acik", "filigran": "AI",
+   "ince_baslik": "Sen işine odaklan,", "kalin_baslik": "mesajları\nRysone yanıtlasın.",
+   "bilgi": "Fiyat, adres, uygun saat... Rysone hepsini bilir."},
+
+  {"id": "12_vazgecen_musteri", "sablon": "soru", "tema": "mavi", "soru_boyut": "140px",
+   "soru": "KAÇ MÜŞTERİ\nCEVAP BEKLERKEN\n**VAZGEÇTİ?**",
+   "cevap": "Bilmiyorsan sorun büyük olabilir. Rysone ile **hiçbir mesaj cevapsız kalmaz.**"},
+
+  {"id": "13_sabah_manzarasi", "sablon": "bildirim", "tema": "acik",
+   "ince_baslik": "Sabah uyandığında", "kalin_baslik": "seni bu karşılar.", "saat": "08:00", "tarih": "Günaydın",
+   "bildirimler": [
+     {"baslik": "Gece boyunca", "metin": "12 mesaj yanıtlandı", "zaman": "07:59"},
+     {"baslik": "Yeni randevular", "metin": "4 randevu takvime eklendi", "zaman": "07:59"},
+     {"baslik": "Hatırlatmalar", "metin": "Bugünkü müşterilere gönderildi", "zaman": "07:30"}],
+   "alt_metin": "Güne **yetişmeye çalışarak değil,** önde başla."},
+
+  {"id": "14_eski_usul_yeni_usul", "sablon": "karsilastirma", "tema": "gece", "etiket": "Eski usul mü, yeni usul mü?",
+   "baslik": "Asistanın\nnasıl çalışıyor?",
+   "sol_baslik": "Eski usul", "sol_maddeler": ["Mesai 09:00–18:00", "Aynı anda tek müşteri", "Yorulur, unutur", "Tatilde iş durur"],
+   "sag_baslik": "Rysone", "sag_maddeler": ["Mesai 7/24", "Aynı anda birçok sohbet", "Her müşteriye aynı özen", "Tatilde de çalışır"]},
+
+  {"id": "15_otuz_saniye", "sablon": "sayi", "tema": "acik", "etiket": "Bir randevu ne kadar sürmeli?",
+   "sayi": "30 sn", "birim": "yeter", "baslik": "Soru, saat, onay.",
+   "metin": "Müşterin tek bir sohbette randevusunu alır. Telefon trafiği yok, bekleme yok."},
+
+  {"id": "16_mesajin_yolculugu", "sablon": "adimlar", "tema": "mor", "etiket": "02:13'te gelen bir mesaj",
+   "baslik": "Bir mesajın\nyolculuğu",
+   "adimlar": [
+     {"baslik": "02:13 · Müşteri yazar", "metin": "“Yarın için fiyat ve müsaitlik öğrenebilir miyim?”"},
+     {"baslik": "02:13 · Rysone yanıtlar", "metin": "Fiyatı söyler, uygun saatleri sıralar."},
+     {"baslik": "02:14 · Saat seçilir", "metin": "Müşteri seçer, Rysone onaylar."},
+     {"baslik": "02:15 · Randevu hazır", "metin": "Sen uyurken takvimine eklenir."}]},
+
+  {"id": "17_ipucu_hatirlatma", "sablon": "ipucu", "tema": "gece", "etiket": "İşletmeler için ipucu", "no": "02",
+   "baslik": "Hatırlatma gönder, koltuk boş kalmasın.",
+   "metin": "Randevudan önce gönderilen kısa bir mesaj, **unutulan randevuların** önüne geçer.",
+   "not": "Rysone hatırlatmaları **otomatik** gönderir."},
+
+  {"id": "18_hali_yikama", "sablon": "sohbet", "tema": "mavi", "rozet": "HALI YIKAMA İÇİN",
+   "baslik": "Adres, saat, teslim:", "vurgu": "tek sohbette.", "asistan_adi": "Halı Yıkama Asistanı",
+   "mesajlar": [
+     {"kim": "musteri", "metin": "3 halım var, yarın alabilir misiniz?", "saat": "21:05"},
+     {"kim": "asistan", "metin": "Elbette! Adresinizi ve uygun saat aralığınızı yazar mısınız?", "saat": "21:05"},
+     {"kim": "musteri", "metin": "Moda, öğleden sonra olur.", "saat": "21:06"},
+     {"kim": "asistan", "metin": "Yarın **14:00–16:00** arası ekibimiz kapınızda olacak.", "saat": "21:06"}],
+   "alt_metin": "Sipariş alırken **not tutmana gerek kalmaz.**"},
+
+  {"id": "19_sektorun_ne_olursa", "sablon": "sektorler", "tema": "acik", "etiket": "Kimler için?",
+   "baslik": "Sektörün ne olursa olsun,", "vurgu": "müşterin yazıyor.",
+   "etiketler": ["Klinik", "Estetik", "Masaj & SPA", "Tırnak stüdyosu", "Kafe", "Otel", "Pansiyon", "Eğitim kurumu", "Dil kursu", "Oto kiralama", "Tadilat", "Temizlik", "Organizasyon", "Butik", "E-ticaret"],
+   "alt_metin": "Rysone işletmeni öğrenir, **senin dilinle** konuşur."},
+
+  {"id": "20_tek_panel", "sablon": "buyuk_soz", "tema": "gece", "filigran": "DM",
+   "ince_baslik": "Instagram,\nWhatsApp, web...", "kalin_baslik": "Hepsi tek\npanelde.",
+   "bilgi": "Uygulamalar arasında koşturma yok. Tüm mesajlar tek yerde."},
+
+  {"id": "21_ayni_soru_kac_kez", "sablon": "soru", "tema": "acik", "soru_boyut": "132px",
+   "soru": "AYNI SORUYA\nBUGÜN KAÇ KEZ\n**CEVAP VERDİN?**",
+   "cevap": "“Fiyat ne?”, “Adres nerede?”, “Kaça kadar açıksınız?” Sık soruları **Rysone yanıtlasın.**"},
+
+  {"id": "22_tatilde_bile", "sablon": "bildirim", "tema": "gece",
+   "ince_baslik": "Tatildeyken bile", "kalin_baslik": "işin dönüyor.", "saat": "14:30", "tarih": "Pazar, tatil",
+   "bildirimler": [
+     {"baslik": "Yeni müşteri", "metin": "Instagram'dan randevu aldı", "zaman": "14:02"},
+     {"baslik": "Yeni müşteri", "metin": "WhatsApp'tan randevu aldı", "zaman": "13:47"},
+     {"baslik": "Randevu değişti", "metin": "Müşteri saatini salıya aldı", "zaman": "12:15"}],
+   "alt_metin": "Telefonu kenara bırak. **Rysone nöbette.**"},
+
+  {"id": "23_telefon_vs_rysone", "sablon": "karsilastirma", "tema": "mavi", "etiket": "Hangisi daha rahat?",
+   "baslik": "Telefon mu,\nRysone mu?",
+   "sol_baslik": "Telefon", "sol_maddeler": ["Meşgul çalar", "Not almayı unutursun", "Gece kapalı", "Aynı anda tek arama"],
+   "sag_baslik": "Rysone", "sag_maddeler": ["Herkese anında cevap", "Her şey kayıtlı", "Gece de açık", "Aynı anda çok müşteri"]},
+
+  {"id": "24_yirmi_sektor", "sablon": "sayi", "tema": "gece", "etiket": "Farklı işler, aynı ihtiyaç",
+   "sayi": "20+", "birim": "sektör", "baslik": "Ortak ihtiyaç: hızlı cevap.",
+   "metin": "Klinikten kuaföre, restorandan oto servise. Rysone her işletmenin diline uyum sağlar."},
+
+  {"id": "25_uc_adimda_kurulum", "sablon": "adimlar", "tema": "acik", "etiket": "Başlamak kolay",
+   "baslik": "3 adımda\nRysone'a geç",
+   "adimlar": [
+     {"baslik": "Bize ulaş", "metin": "0536 919 89 86'yı ara ya da DM'den yaz."},
+     {"baslik": "İşletmeni tanıt", "metin": "Hizmetlerin, fiyatların, çalışma saatlerin."},
+     {"baslik": "Yayına al", "metin": "Rysone müşterilerine cevap vermeye başlasın."}],
+   "buton": "BİLGİ AL"},
+
+  {"id": "26_restoran", "sablon": "sohbet", "tema": "gece", "rozet": "RESTORAN VE KAFELER İÇİN",
+   "baslik": "Sen servis yap,", "vurgu": "rezervasyonu Rysone alsın.", "asistan_adi": "Rezervasyon Asistanı",
+   "mesajlar": [
+     {"kim": "musteri", "metin": "Cuma akşamı 4 kişilik masa var mı?", "saat": "19:48"},
+     {"kim": "asistan", "metin": "Cuma **20:00** ve **21:30** için masa müsait. Hangisini ayırayım?", "saat": "19:48"},
+     {"kim": "musteri", "metin": "20:00, cam kenarı olursa süper.", "saat": "19:49"},
+     {"kim": "asistan", "metin": "Cuma 20:00, 4 kişilik cam kenarı masanız ayrıldı.", "saat": "19:49"}],
+   "alt_metin": "Yoğun saatlerde **telefon çalmaz,** rezervasyon yine gelir."},
+
+  {"id": "27_ipucu_fiyat_soran", "sablon": "ipucu", "tema": "mavi", "etiket": "İşletmeler için ipucu", "no": "03",
+   "baslik": "Fiyat soranı kaçırma.",
+   "metin": "Fiyat soran müşteri ilgilidir. Hızlı bir yanıt ve **net bir sonraki adım** (randevu) onu müşteriye çevirir.",
+   "not": "Rysone fiyatı söyler, **randevuyu da önerir.**"},
+
+  {"id": "28_kacan_mesaj", "sablon": "buyuk_soz", "tema": "mor", "filigran": "0",
+   "ince_baslik": "Kaçan mesaj,", "kalin_baslik": "kaçan müşteri\ndemek.",
+   "bilgi": "Rysone her mesajı saniyeler içinde yanıtlar."},
+
+  {"id": "29_izin_almayan_asistan", "sablon": "soru", "tema": "gece", "soru_boyut": "140px",
+   "soru": "ASİSTANIN\nHİÇ İZİN\n**ALMASA?**",
+   "cevap": "Rysone bayramda, gece yarısı, hafta sonu **çalışmaya devam eder.**"},
+
+  {"id": "30_musteri_hatirlatma", "sablon": "bildirim", "tema": "mavi",
+   "ince_baslik": "Müşterine giden", "kalin_baslik": "hatırlatma da Rysone'dan.", "saat": "09:00", "tarih": "Randevudan bir gün önce",
+   "bildirimler": [
+     {"baslik": "Randevu hatırlatması", "metin": "Yarın 10:00 diş kontrolünüz var. Gelemiyorsanız yazmanız yeterli.", "zaman": "09:00"},
+     {"baslik": "Müşteri yanıtladı", "metin": "“Geleceğim, teşekkürler!”", "zaman": "09:04"}],
+   "alt_metin": "Unutulan randevu yok, **boş kalan saat yok.**"},
+
+  {"id": "31_kimler_icin", "sablon": "sektorler", "tema": "mor", "etiket": "Rysone kimler için?",
+   "baslik": "Randevu ya da mesajla", "vurgu": "çalışan herkes için.",
+   "etiketler": ["Doktor", "Diş hekimi", "Güzellik uzmanı", "Kuaför", "Eğitmen", "Danışman", "Avukat", "Mimar", "Veteriner", "Antrenör", "Terapist", "Servis"],
+   "alt_metin": "Senin sektörün listede yok mu? **Yine de yaz,** konuşalım."},
+
+  {"id": "32_manuel_otomatik", "sablon": "karsilastirma", "tema": "acik", "etiket": "Takip nasıl yapılıyor?",
+   "baslik": "Elle takip mi,\notomatik mi?",
+   "sol_baslik": "Elle", "sol_maddeler": ["Hatırlatmaları tek tek yaz", "Randevular kâğıtta", "Kim ne sordu, unutulur", "Akşam yine mesaj trafiği"],
+   "sag_baslik": "Rysone ile", "sag_maddeler": ["Hatırlatma kendiliğinden gider", "Randevular panelde", "Her sohbet kayıtlı", "Akşamın sana kalır"]},
+
+  {"id": "33_veteriner", "sablon": "sohbet", "tema": "gece", "rozet": "VETERİNER KLİNİKLERİ İÇİN",
+   "baslik": "Patili dostlar da", "vurgu": "beklemesin.", "asistan_adi": "Veteriner Asistanı",
+   "mesajlar": [
+     {"kim": "musteri", "metin": "Kedimin aşı zamanı geldi, hangi gün gelebilirim?", "saat": "20:12"},
+     {"kim": "asistan", "metin": "Çarşamba **11:00** ve Perşembe **15:00** müsait. Kedinizin adı nedir?", "saat": "20:12"},
+     {"kim": "musteri", "metin": "Pamuk. Perşembe olsun.", "saat": "20:13"},
+     {"kim": "asistan", "metin": "Perşembe 15:00'te Pamuk'un aşı randevusu oluşturuldu.", "saat": "20:13"}],
+   "alt_metin": "Muayenedeyken gelen mesajlar **randevuya dönüşür.**"},
+
+  {"id": "34_tek_panel_sayi", "sablon": "sayi", "tema": "mor", "etiket": "Kaç uygulama açık tutuyorsun?",
+   "sayi": "1", "birim": "panel", "baslik": "Tüm kanallar tek ekranda.",
+   "metin": "Instagram, WhatsApp ve web sitenden gelen tüm mesajlar Rysone panelinde toplanır."},
+
+  {"id": "35_sesli_asistan", "sablon": "adimlar", "tema": "gece", "etiket": "Sadece yazmaz, konuşur da",
+   "baslik": "Rysone müşterini\narar.",
+   "adimlar": [
+     {"baslik": "Müşteri başvurur", "metin": "Reklamdan ya da form üzerinden."},
+     {"baslik": "Rysone arar", "metin": "Doğal bir sesle kendini tanıtır."},
+     {"baslik": "Soruları yanıtlar", "metin": "Hizmeti anlatır, itirazları karşılar."},
+     {"baslik": "Randevuyu oluşturur", "metin": "Müşteriye uygun saati bulup kaydeder."}]},
+
+  {"id": "36_ipucu_sik_sorular", "sablon": "ipucu", "tema": "acik", "etiket": "İşletmeler için ipucu", "no": "04",
+   "baslik": "Sık soruları bir kez yaz.",
+   "metin": "Adres, çalışma saatleri, fiyatlar... Bunları bir kez anlat, **her seferinde yeniden yazma.**",
+   "not": "Rysone'a bir kez öğret, **her seferinde o yanıtlasın.**"},
+
+  {"id": "37_guzellik_merkezi", "sablon": "sohbet", "tema": "mor", "rozet": "GÜZELLİK MERKEZLERİ İÇİN",
+   "baslik": "Fiyat soran müşteri", "vurgu": "randevuyla dönsün.", "asistan_adi": "Güzellik Asistanı",
+   "mesajlar": [
+     {"kim": "musteri", "metin": "Lazer epilasyon fiyatı ne kadar?", "saat": "22:30"},
+     {"kim": "asistan", "metin": "Bölgeye göre değişiyor. Hangi bölge için düşünüyorsunuz?", "saat": "22:30"},
+     {"kim": "musteri", "metin": "Bacak.", "saat": "22:31"},
+     {"kim": "asistan", "metin": "Fiyatı ve paketleri ön görüşmede netleştirelim. **Perşembe 18:00** uygun mu?", "saat": "22:31"}],
+   "alt_metin": "Sadece fiyat vermez, **müşteriyi randevuya taşır.**"},
+
+  {"id": "38_sinirsiz_sabir", "sablon": "buyuk_soz", "tema": "acik", "filigran": "100",
+   "ince_baslik": "Bir asistan,", "kalin_baslik": "sınırsız sabır.",
+   "bilgi": "Aynı soruyu 100. kez de aynı nezaketle yanıtlar."},
+
+  {"id": "39_telefon_caliyor", "sablon": "soru", "tema": "mor", "soru_boyut": "122px",
+   "soru": "TELEFON ÇALARKEN\nMÜŞTERİNE Mİ\n**BAKIYORSUN,**\n**TELEFONA MI?**",
+   "cevap": "İkisini birden yapmana gerek yok. **Mesajlar Rysone'da,** sen karşındaki müşteride."},
+
+  {"id": "40_oto_servis", "sablon": "sohbet", "tema": "acik", "rozet": "OTO SERVİSLER İÇİN",
+   "baslik": "Bakım randevusu", "vurgu": "kendiliğinden gelsin.", "asistan_adi": "Servis Asistanı",
+   "mesajlar": [
+     {"kim": "musteri", "metin": "Arabamın periyodik bakımı için yer var mı?", "saat": "08:15"},
+     {"kim": "asistan", "metin": "Elbette. Aracınızın marka ve modelini yazar mısınız?", "saat": "08:15"},
+     {"kim": "musteri", "metin": "2020 model bir sedan.", "saat": "08:16"},
+     {"kim": "asistan", "metin": "**Salı 09:00** için bakım randevunuz oluşturuldu. Tahmini süre 2 saat.", "saat": "08:16"}],
+   "alt_metin": "Ustalar işinde, **randevular Rysone'da.**"}
+]
