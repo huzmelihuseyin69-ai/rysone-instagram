@@ -3,6 +3,7 @@ name: Günlük paylaşım
 on:
   schedule:
     - cron: "0 9 * * *"   # UTC 09:00 = TR 12:00
+    - cron: "44 10 * * *"  # GEÇİCİ DENEME
   workflow_dispatch:
     inputs:
       tur:
