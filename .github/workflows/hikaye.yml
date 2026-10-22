@@ -2,8 +2,7 @@ name: Günlük paylaşım
 
 on:
   schedule:
-    - cron: "0 9 * * *"   # UTC 09:00 = TR 12:00
-    - cron: "44 10 * * *"  # GEÇİCİ DENEME
+    - cron: "0 9 * * *"   # UTC 09:00 = TR 12:00 (yedek; asıl tetik cron-job.org)
   workflow_dispatch:
     inputs:
       tur:
