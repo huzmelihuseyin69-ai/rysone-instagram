@@ -41,6 +41,12 @@ jobs:
         with:
           python-version: "3.12"
       - run: pip install requests
+      - name: Tek seferlik zorla isteği
+        # tetik/zorla.txt varsa (içerik: hikaye / gonderi / ikisi) o tür bugün paylaşılmış olsa da paylaşılır; dosya sonra silinir
+        if: github.event_name == 'push' && hashFiles('tetik/zorla.txt') != ''
+        run: |
+          echo "TUR=$(tr -d '[:space:]' < tetik/zorla.txt)" >> "$GITHUB_ENV"
+          echo "ZORLA=1" >> "$GITHUB_ENV"
       - name: Hikâye
         if: env.TUR != 'gonderi'
         run: python paylas.py hikaye
@@ -53,4 +59,5 @@ jobs:
           git config user.name "paylasim-bot"
           git config user.email "paylasim-bot@users.noreply.github.com"
           git add durum.json
+          if [ -f tetik/zorla.txt ]; then git rm -q tetik/zorla.txt; fi
           git diff --cached --quiet || (git commit -m "Instagram paylaşımı $(date -u +%F)" && git push)
