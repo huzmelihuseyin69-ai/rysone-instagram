@@ -2,7 +2,7 @@ name: Günlük paylaşım
 
 on:
   schedule:
-    - cron: "0 9 * * *"   # UTC 09:00 = TR 12:00 (yedek; asıl tetik cron-job.org)
+    - cron: "0 9 * * *"   # UTC 09:00 = TR 12:00 (yedek; asıl tetik Claude rutini → tetik/son.txt)
   push:   # Claude rutini her gün tetik/son.txt dosyasını güncelleyip buradan tetikler
     branches: [main]
     paths: ["tetik/**"]
