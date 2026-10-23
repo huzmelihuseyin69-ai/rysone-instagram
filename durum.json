@@ -1,14 +1,14 @@
 {
   "hikaye": {
-    "siradaki": 2,
-    "son_tarih": "2026-10-22",
-    "son_gorsel": "02_dis_klinigi.jpg",
-    "son_medya_id": "17997927548834057"
+    "siradaki": 3,
+    "son_tarih": "2026-10-23",
+    "son_gorsel": "03_mesai_bitti.jpg",
+    "son_medya_id": "17953464477315270"
   },
   "gonderi": {
-    "siradaki": 2,
-    "son_tarih": "2026-10-22",
-    "son_gorsel": "02_fizyoterapi_arama.jpg",
-    "son_medya_id": "17952034683321984"
+    "siradaki": 3,
+    "son_tarih": "2026-10-23",
+    "son_gorsel": "03_tek_panel_akis.jpg",
+    "son_medya_id": "17893085457447166"
   }
 }
